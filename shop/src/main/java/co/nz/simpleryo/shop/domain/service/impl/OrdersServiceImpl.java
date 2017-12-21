@@ -6,6 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import co.nz.simpleryo.shop.domain.common.BaseService;
 import co.nz.simpleryo.shop.domain.dao.GoodsMapper;
@@ -41,6 +44,7 @@ public class OrdersServiceImpl extends BaseService<Orders> implements OrdersServ
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.DEFAULT,timeout=36000,rollbackFor=Exception.class)
 	public int buy(List<BuyGoodDto> buyGoodDto) {
 //		Long idBase = System.currentTimeMillis();
 		for(int i = 0; i < buyGoodDto.size(); i++) {
