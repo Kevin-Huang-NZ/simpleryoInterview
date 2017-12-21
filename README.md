@@ -1,12 +1,12 @@
 # simpleryoInterview
 
 # 一、环境
-1、目录说明
-  该程序实现分为前、后端两个工程。
-  shop: 是后台java工程。
-  shop-frontend：是前端reactjs工程。
+1. 目录说明
+    该程序实现分为前、后端两个工程。
+    shop: 是后台java工程。
+    shop-frontend：是前端reactjs工程。
   
-2、开发运行环境
+2. 开发运行环境
   OS: windows 7（其他操作系统和版本未测试）
   java version "1.8.0_131"
   Apache Maven 3.5.2
