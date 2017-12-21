@@ -22,7 +22,7 @@ import org.springframework.validation.BindException;
  * @author huanghao
  *
  */
-@ControllerAdvice(basePackages = {"com.seekgd.ssm.rest"})
+@ControllerAdvice(basePackages = {"co.nz.simpleryo.shop.web.rest"})
 public class RestExceptionHandler {
 
 	private static final Logger logger = LoggerFactory.getLogger(RestExceptionHandler.class);
