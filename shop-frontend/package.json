@@ -1,0 +1,34 @@
+{
+    "name": "shop",
+    "version": "1.0.0",
+    "description": "Simpleryo test",
+    "main": "webpack.config.js",
+    "author": "Kevin Huang",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.17.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "flux": "^3.1.3",
+        "lodash": "^4.17.4",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-router-dom": "^4.2.2"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-react-html-attrs": "^2.1.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-decorators-legacy": "^1.3.4",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "webpack": "^3.10.0",
+        "webpack-dev-server": "^2.9.5"
+    },
+    "scripts": {
+        "dev": "./node_modules/.bin/webpack-dev-server --inline --hot",
+        "webpack": "./node_modules/.bin/webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}

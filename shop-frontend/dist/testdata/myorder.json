@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "buyDate": "2017-12-21 21:22:44",
+  "details": [
+      {
+        "id": 1,
+        "name": "IPhone X",
+        "buyAmount": 2
+      },
+      {
+        "id": 2,
+        "name": "Huawei P10",
+        "buyAmount": 1
+      }
+  ]
+}
