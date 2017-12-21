@@ -30,20 +30,20 @@
   
 # 三、回答问题
 #### 问题1、前后台都用了哪些框架，为什么？
-1、后端java工程是一个rest工程，提供api接口供前台工程调用。  
-  使用了spring boot，原因：简化配置，容易部署运行。  
-  mvc框架使用spring mvc，原因：使用RestController注解非常方便实现rest controller；spring mvc的@ControllerAdvice方便实现统一异常处理；同时，集成Spring Security更加便捷（本工程没有集成）。  
-  数据持久使用mybatis，原因：个人原因，因为做数据库方面开发比较多，习惯使用sql语句，并且mybatis使用原生sql比hibernate更方便，有利于sql优化。  
+1. 后端java工程是一个rest工程，提供api接口供前台工程调用。  
+        使用了spring boot，原因：简化配置，容易部署运行。  
+        mvc框架使用spring mvc，原因：使用RestController注解非常方便实现rest controller；spring mvc的@ControllerAdvice方便实现统一异常处理；同时，集成Spring Security更加便捷（本工程没有集成）。  
+        数据持久使用mybatis，原因：个人原因，因为做数据库方面开发比较多，习惯使用sql语句，并且mybatis使用原生sql比hibernate更方便，有利于sql优化。  
   
-2、前端工程使用了reactjs 和 react flux  
- 选择reactjs是因为正好最近在学习，刚开始接触，还没有用reactjs做过项目，这次就当练手了。  
+2. 前端工程使用了reactjs 和 react flux  
+        选择reactjs是因为正好最近在学习，刚开始接触，还没有用reactjs做过项目，这次就当练手了。  
 
 #### 问题2、数据持久层是怎么实现的？
-  数据库选择的H2的memory模式。  
-  由spring调用sql脚本完成数据库的创建和测试数据初始化。  
-  数据持久层使用mybatis，并抽象出通用的mapper和service接口以及实现，简单的增删改查使用mybatis的自动生成sql。  
-  数据库事务在service层控制，在方法级别采用注解@Transactional实现。  
+        数据库选择的H2的memory模式。  
+        由spring调用sql脚本完成数据库的创建和测试数据初始化。  
+        数据持久层使用mybatis，并抽象出通用的mapper和service接口以及实现，简单的增删改查使用mybatis的自动生成sql。  
+        数据库事务在service层控制，在方法级别采用注解@Transactional实现。  
 
 #### 问题3、用了多长时间完成？
-  java工程和数据库用时3小时左右。  
-  前端工程用时5小时左右。  
+        java工程和数据库用时3小时左右。  
+        前端工程用时5小时左右。  
